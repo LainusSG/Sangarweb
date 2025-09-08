@@ -4,6 +4,68 @@
 {% block title %}Servicios - SANGARTECH{% endblock %}
 
 {% block content %}
+
+<style>
+/* =====================
+   ESTILOS PARA CELULAR
+===================== */
+@media (max-width: 576px) {
+    /* Contenedor */
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    /* Tipografía general */
+    h1 {
+        font-size: 1.6rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    h3 {
+        font-size: 1.1rem;
+    }
+    p.lead {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    p {
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
+
+    /* Botones (ejemplo en Contacto) */
+    .btn {
+        width: 100% !important;   /* ocupan todo el ancho */
+        font-size: 1rem;
+        padding: 14px;
+    }
+
+    /* Cartas de misión y visión → una debajo de otra */
+    .row.g-4 .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    /* Valores → 2 por fila en móvil */
+    .row.g-4.text-center .col-md-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    /* Espaciado más compacto */
+    .card {
+        margin-bottom: 1rem;
+        padding: 0.75rem;
+    }
+
+    /* Footer más pequeño */
+    footer p {
+        font-size: 0.8rem;
+    }
+}
+</style>
 <div class="container py-5">
     <h1 class="text-center mb-5 fw-bold">Nuestros Servicios</h1>
     

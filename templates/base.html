@@ -5,75 +5,124 @@
     <title>{% block title %}SANGARTECH{% endblock %}</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <style>
-        /* Layout general para sticky footer */
-        html, body {
-            height: 100%;
-            margin: 0;
-        }
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            background-color: #121212; /* fondo oscuro */
-            color: #e0e0e0; /* texto claro */
-        }
-        main {
-            flex: 1;
-        }
+    /* Layout general para sticky footer */
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background-color: #121212; /* fondo oscuro */
+        color: #e0e0e0; /* texto claro */
+    }
+    main {
+        flex: 1;
+    }
 
-        /* Estilos del SideNav */
-        .sidenav {
-            height: 100%;
-            width: 0;
-            position: fixed;
-            top: 0;
-            left: 0;
-            background-color: #1e1e1e; /* más claro que el body */
-            overflow-x: hidden;
-            transition: 0.3s;
-            padding-top: 60px;
-            z-index: 1050;
-        }
-        .sidenav a {
-            padding: 12px 20px;
-            text-decoration: none;
-            font-size: 18px;
-            color: #e0e0e0;
-            display: block;
-            transition: 0.2s;
-        }
-        .sidenav a:hover {
-            background-color: #0d6efd;
-            color: #fff;
-        }
-        .sidenav .closebtn {
-            position: absolute;
-            top: 15px;
-            right: 20px;
-            font-size: 30px;
-            color: #f8f9fa;
-            cursor: pointer;
+    /* Estilos del SideNav */
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #1e1e1e; /* más claro que el body */
+        overflow-x: hidden;
+        transition: 0.3s;
+        padding-top: 60px;
+        z-index: 1050;
+    }
+    .sidenav a {
+        padding: 12px 20px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #e0e0e0;
+        display: block;
+        transition: 0.2s;
+    }
+    .sidenav a:hover {
+        background-color: #0d6efd;
+        color: #fff;
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        font-size: 30px;
+        color: #f8f9fa;
+        cursor: pointer;
+    }
+    .menu-btn {
+        font-size: 24px;
+        cursor: pointer;
+        color: white;
+        border: none;
+        background: none;
+    }
+
+    /* Footer */
+    footer {
+        background-color: #1e1e1e;
+    }
+
+    /* Tarjetas y contenedores */
+    .card {
+        background-color: #1e1e1e;
+        border: 1px solid #2c2c2c;
+        color: #e0e0e0;
+    }
+
+    /* =====================
+       ESTILOS PARA CELULAR
+    ===================== */
+    @media (max-width: 576px) {
+        /* Navbar */
+        .navbar img {
+            height: 45px; /* Logo más pequeño */
         }
         .menu-btn {
-            font-size: 24px;
-            cursor: pointer;
-            color: white;
-            border: none;
-            background: none;
+            font-size: 22px;
         }
 
-        /* Footer */
-        footer {
-            background-color: #1e1e1e;
+        /* Tipografía */
+        h1 {
+            font-size: 1.5rem;
+        }
+        p.lead {
+            font-size: 1rem;
         }
 
-        /* Tarjetas y contenedores */
-        .card {
-            background-color: #1e1e1e;
-            border: 1px solid #2c2c2c;
-            color: #e0e0e0;
+        /* Botones */
+        .btn {
+            width: 100%; /* Botón ancho completo en móvil */
+            font-size: 1rem;
+            padding: 12px;
         }
-    </style>
+
+        /* SideNav ocupa toda la pantalla en móvil */
+        .sidenav {
+            width: 0;
+            padding-top: 50px;
+        }
+        .sidenav a {
+            font-size: 16px;
+            padding: 14px 18px;
+        }
+
+        /* Contenido más compacto */
+        main.container {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        /* Footer más pequeño */
+        footer p {
+            font-size: 0.85rem;
+        }
+    }
+</style>
 </head>
 <body>
     <!-- Navbar -->

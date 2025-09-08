@@ -2,6 +2,27 @@
 {% load static %}
 
 {% block content %}
+<style>
+/* =====================
+   ESTILOS PARA CELULAR
+===================== */
+@media (max-width: 576px) {
+    /* Contenedor principal */
+    .d-flex {
+        height: 65vh !important; /* menos alto en móvil */
+        padding: 1rem;
+    }
+
+    /* Imagen del logo */
+    .img-fluid {
+        max-height: 40vh !important; /* logo más compacto */
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+}
+</style>
+
 <div class="d-flex justify-content-center align-items-center" style="height:75vh;">
     <img src="https://sangarweb.s3.us-east-1.amazonaws.com/SANGARTECH+letra-Photoroom+(1)-Photoroom.png" 
          alt="Logo" 

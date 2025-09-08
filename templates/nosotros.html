@@ -4,6 +4,64 @@
 {% block title %}Sobre Nosotros - SANGARTECH{% endblock %}
 
 {% block content %}
+
+<style>
+/* =====================
+   ESTILOS PARA CELULAR
+===================== */
+@media (max-width: 576px) {
+    /* Contenedor */
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    /* Títulos principales */
+    h1 {
+        font-size: 1.8rem;
+    }
+    h2 {
+        font-size: 1.4rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    /* Párrafos */
+    p.lead {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    p {
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
+
+    /* Cartas de Misión y Visión */
+    .row.g-4 .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    /* Valores: 1 por fila en celular */
+    .row.g-4.text-center .col-md-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    /* Cartas más compactas */
+    .card {
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+    }
+
+    /* Equipo */
+    .mt-5.text-center p.lead {
+        font-size: 1rem;
+    }
+}
+</style>
+
 <div class="container py-5">
     <!-- Título principal -->
     <h1 class="text-center mb-5 fw-bold">Sobre Nosotros</h1>

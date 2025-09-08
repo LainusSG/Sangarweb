@@ -4,6 +4,41 @@
 {% block title %}Contacto - SANGARTECH{% endblock %}
 
 {% block content %}
+
+<style>
+    /* =====================
+       ESTILOS PARA CELULAR
+    ===================== */
+    @media (max-width: 576px) {
+        /* Contenedor principal */
+        .container {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        /* Títulos más pequeños en móvil */
+        h1 {
+            font-size: 1.6rem;
+        }
+        p.lead {
+            font-size: 1rem;
+        }
+
+        /* Botones de contacto */
+        .btn {
+            width: 100% !important; /* Que ocupen todo el ancho */
+            font-size: 1rem;
+            padding: 14px;
+        }
+
+        /* Espacios más compactos */
+        .gap-3 {
+            gap: 1rem !important;
+        }
+    }
+</style>
+
+
 <div class="container py-5 text-center">
     <h1 class="fw-bold mb-4">Contáctanos</h1>
     <p class="lead mb-5">Estamos disponibles para atenderte a través de los siguientes medios:</p>

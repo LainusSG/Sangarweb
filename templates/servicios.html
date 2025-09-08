@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Servicios - SANGARTECH{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <h1 class="text-center mb-5 fw-bold">Nuestros Servicios</h1>
+    
+    <div class="row g-4">
+        <!-- Servicio 1 -->
+        <div class="col-md-3">
+            <div class="card h-100 shadow border-0">
+                <div class="card-body text-center">
+                    <h4 class="card-title fw-bold">🌐 Desarrollo Web</h4>
+                    <p class="card-text mt-3">
+                        Diseñamos y desarrollamos <b>sitios web profesionales</b>, 
+                        adaptativos y optimizados para todos los dispositivos.  
+                        Trabajamos con tecnologías modernas como <b>Django, React y Bootstrap</b>, 
+                        garantizando velocidad, seguridad y escalabilidad.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Servicio 2 -->
+        <div class="col-md-3">
+            <div class="card h-100 shadow border-0">
+                <div class="card-body text-center">
+                    <h4 class="card-title fw-bold">🤖 Inteligencia Artificial</h4>
+                    <p class="card-text mt-3">
+                        Implementamos soluciones basadas en <b>Machine Learning</b> 
+                        y <b>procesamiento de datos</b> para transformar la información 
+                        de tu negocio en <b>decisiones inteligentes</b>.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Servicio 3 -->
+        <div class="col-md-3">
+            <div class="card h-100 shadow border-0">
+                <div class="card-body text-center">
+                    <h4 class="card-title fw-bold">🔒 Ciberseguridad</h4>
+                    <p class="card-text mt-3">
+                        Protegemos tu empresa contra las <b>amenazas digitales</b> más avanzadas.  
+                        Ofrecemos <b>auditorías de seguridad</b>, pruebas de penetración 
+                        y protocolos de protección de datos para mantener tu negocio seguro.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Servicio 4: Hardware -->
+        <div class="col-md-3">
+            <div class="card h-100 shadow border-0">
+                <div class="card-body text-center">
+                    <h4 class="card-title fw-bold">💻 Hardware & Soporte Técnico</h4>
+                    <p class="card-text mt-3">
+                        Ofrecemos <b>venta, instalación y mantenimiento</b> de equipos de cómputo, 
+                        servidores y dispositivos de red.  
+                        Nuestro equipo técnico brinda <b>soporte preventivo y correctivo</b> 
+                        para garantizar que tu infraestructura tecnológica 
+                        funcione de manera óptima.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección extra -->
+    <div class="mt-5 text-center">
+        <h2 class="fw-bold">🚀 ¿Por qué elegir SANGARTECH?</h2>
+        <p class="lead mt-3">
+            Combinamos <b>tecnología, experiencia y pasión por la innovación</b> para ayudarte a crecer.  
+            Nuestro equipo se enfoca en crear soluciones que realmente generen valor 
+            y estén alineadas con tus objetivos de negocio.
+        </p>
+        <a href="mailto:sangartech.ventas@gmail.com" class="btn btn-primary mt-3">
+    Contáctanos
+</a>
+
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Contacto - SANGARTECH{% endblock %}
+
+{% block content %}
+<div class="container py-5 text-center">
+    <h1 class="fw-bold mb-4">Contáctanos</h1>
+    <p class="lead mb-5">Estamos disponibles para atenderte a través de los siguientes medios:</p>
+
+    <!-- Botones de contacto -->
+    <div class="d-flex flex-column align-items-center gap-3">
+        <!-- Teléfono -->
+        <a href="tel:+521234567890" class="btn btn-outline-primary btn-lg w-50">
+            📞 Llamar al +52 953 176 9181
+        </a>
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/qr/SNU37OJ4N5ZWH1" target="_blank" class="btn btn-outline-success btn-lg w-50">
+            💬 Escríbenos por WhatsApp
+        </a>
+
+        <!-- Correo -->
+        <a href="mailto:sangartech.ventas@gmail.com" class="btn btn-outline-success btn-lg w-50">
+            ✉️ Enviar un correo
+        </a>
+
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/share/1BWhgUQ1Dx/" target="_blank" class="btn btn-outline-info btn-lg w-50">
+            🌐 Visítanos en Facebook
+        </a>
+
+        
+    </div>
+</div>
+{% endblock %}

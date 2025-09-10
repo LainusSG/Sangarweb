@@ -4,11 +4,11 @@ services:
       context: ./ 
       dockerfile: Dockerfile
     command: >
-      gunicorn --env DJANGO_SETTINGS_MODULE=backendbarber.settings
-      backendbarber.wsgi:application --bind 0.0.0.0:8000
+      gunicorn --env DJANGO_SETTINGS_MODULE=sangarweb.settings
+      sangarweb.wsgi:application --bind 0.0.0.0:8000
     volumes:
-      - static_volume:/root/backendbarber/staticfiles
-      - media_volume:/root/backendbarber/mediafiles
+      - static_volume:/root/sangarweb/staticfiles
+      - media_volume:/root/sangarweb/mediafiles
     expose:
       - "8000"
     env_file:
@@ -17,8 +17,8 @@ services:
   nginx:
     build: ./nginx
     volumes:
-      - static_volume:/root/backendbarber/staticfiles
-      - media_volume:/root/backendbarber/mediafiles
+      - static_volume:/root/sangarweb/staticfiles
+      - media_volume:/root/sangarweb/mediafiles
     ports:
       - "20000:80"   # Cambié a 10000
     depends_on:
